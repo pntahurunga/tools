@@ -19,11 +19,12 @@ $gutter-horizontal: 40px;
 
 body {
     font-size: 1.6rem;
+    max-width: $grid-width;
+    margin: 0 auto;
 }
 
 .row {
-    margin: 0 auto;
-    width: $grid-width;
+    width: 100%;
     &:not(:last-child) {
         margin-bottom: $gutter-horizontal;
     }

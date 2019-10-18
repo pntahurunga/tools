@@ -12,11 +12,12 @@ html {
   clear: both; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  max-width: 114rem;
+  margin: 0 auto; }
 
 .row {
-  margin: 0 auto;
-  width: 114rem; }
+  width: 100%; }
   .row:not(:last-child) {
     margin-bottom: 40px; }
   .row .col {
@@ -46,3 +47,11 @@ body {
       width: calc( 2 * (100%/8) + (100% - 1* 20px) /2); }
     .row .col-8-of-8 {
       width: calc( 100% / 1); }
+
+/* On screens that are 992px or less*/
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  .row .col {
+    width: calc( 100% / 1); }
+    .row .col:not(:last-child) {
+      margin-bottom: calc(40px/2); } }

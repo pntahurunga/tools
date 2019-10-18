@@ -1,0 +1,15 @@
+/* On screens that are 992px or less*/
+
+@media screen and (max-width: 992px) {}
+
+
+/* On screens that are 600px or less */
+
+@media screen and (max-width: 600px) {
+    .row .col {
+        width: calc( 100% / 1);
+        &:not(:last-child) {
+            margin-bottom: calc(#{$gutter-horizontal}/2);
+        }
+    }
+}
