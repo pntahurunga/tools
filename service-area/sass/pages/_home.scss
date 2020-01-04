@@ -1,0 +1,21 @@
+.section-feature {
+    background-image: $background-gradient-image;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem 0;
+    transform: skewY(-7deg);
+    margin: 8rem auto;
+    &>* {
+        transform: skewY(7deg);
+    }
+    #section-feature {
+        margin: 0 auto;
+        max-width: 114rem;
+    }
+}
+
+.section-tours {
+    margin-top: -20rem;
+    padding-top: 35rem;
+    background-color: #F7F5F7;
+}

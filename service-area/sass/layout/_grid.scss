@@ -1,0 +1,9 @@
+[class^="col-"] {
+    display: inline-block;
+}
+
+.row {
+    .col-3 {
+        width: calc((100%/4));
+    }
+}
